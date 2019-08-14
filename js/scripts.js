@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#formOne").submit(function(){
+  $("#formOne").submit(function(event) {
     // this section takes the user input and stores it in variables
     var person1input = $("input#person1").val();
     var person2input = $("input#person2").val();
@@ -11,10 +11,11 @@ $(document).ready(function() {
     $(".person1").text(person1input);
     $(".person2").text(person2input);
     $(".animal").text(animalInput);
-    $(".explanation").text(explanationInput);
-    $("verb").text(verbInput);
-    $("noun").text(nounInput);
-
+    $(".exclamation").text(exclamationInput);
+    $(".verb").text(verbInput);
+    $(".noun").text(nounInput);
+// will display story
+  $("#story").show();
+  event.preventDefault();
   });
-
 });
