@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    // this section takes the user input and stores it in variables
     var inputs = ["person1", "person2", "animal", "exclamation", "verb", "noun"]
 
     inputs.forEach(function(input) {
@@ -8,6 +7,7 @@ $(document).ready(function() {
       $("." + input).text(userInput);
 
     });
+    // this section takes the user input and stores it in variables
     // var person1input = $("input#person1").val();
     // var person2input = $("input#person2").val();
     // var animalInput = $("input#animal").val();
